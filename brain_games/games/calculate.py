@@ -1,51 +1,47 @@
 import random
 
+
 from brain_games.cli import welcome_user
 
+ROUNDS_TO_WIN = 3
+MAX_NUMBER = 50
+
+def gerate_questions():
+    numero_1 = random.randint(1, MAX_NUMBER)
+    numero_2 = random.randint(1, MAX_NUMBER)
+
+    operations = ["+", "-", "*"]
+    operation = random.choice(operations)
+    return numero_1, numero_2, operation
+
+def calculate_answer(numero_1, numero_2, operation):
+    if operation == "+":
+        return numero_1 + numero_2
+    elif operation == "-":
+        return numero_1 - numero_2
+    elif operation == "*":
+        return numero_1 * numero_2
+
 def play_brain_calculate():
-    # Llamar a el name de la funcion welcome
+    # Llamar a el name de la funcion welcome con la variable name
     name = welcome_user()
+    print("What is the result of the expression?")
+
+
     contador = 0
-    while contador < 3:
-        numero_1 = random.randint(1, 50)
-        numero_2 = random.randint(1, 50)
-        print("What is the result of the expression?")
-        print(f"Question: {numero_1} + {numero_2}")
-        result = int(input("Your answer: "))
+    while contador < ROUNDS_TO_WIN:
         
-        # Caso para la suma
-        if result == numero_1 + numero_2:
-            contador += 1
-            print("Correct!")
-        else:
-            print(f"{result} is wrong answer ;(. Correct answer was {numero_1 + numero_2}.")
-            print(f"Let's try again {name}!")
-            return
+        numero_1, numero_2, operation = gerate_questions()
+        print(f"Question: {numero_1} {operation} {numero_2}")
 
-        numero_1 = random.randint(1, 50)
-        numero_2 = random.randint(1, 50)
-        # Caso para la multiplicacion
-        print(f"Question: {numero_1} * {numero_2}")
         result = int(input("Your answer: "))
-        
-        if result == numero_1 * numero_2:
-            contador += 1
-            print("Correct!")
-        else:
-            print(f"{result} is wrong answer ;(. Correct answer was {numero_1 * numero_2}.")
-            print(f"Let's try again {name}!")
-            return
+        correct_answer = calculate_answer(numero_1, numero_2, operation)
 
-        numero_1 = random.randint(1, 50)
-        numero_2 = random.randint(1, 50)
-        # Caso para la resta
-        print(f"Question: {numero_1} - {numero_2}")
-        result = int(input("Your answer: "))
-        if result == numero_1 - numero_2:
+        if result == correct_answer:
             contador += 1
-            print("Correct!")
+            print(f"Correct!")
         else:
-            print(f"{result} is wrong answer ;(. Correct answer was {numero_1 - numero_2}.")
-            print(f"Let's try again {name}!")
+            print(f"{result} is wrong answer ;(. Correct answer was {correct_answer}.")
+            print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
