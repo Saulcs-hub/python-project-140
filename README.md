@@ -16,13 +16,13 @@ Brain Games es un conjunto de juegos educativos de lógica matemática implement
 ## Instalación
 
 ```bash
-uv tool install git+https://github.com/TU_USER/python-project-140.git
+uv tool install git+https://github.com/Saulcs-hub/python-project-140.git
 ```
 
 O en desarrollo:
 
 ```bash
-git clone https://github.com/TU_USER/python-project-140.git
+git clone https://github.com/Saulcs-hub/python-project-140.git
 cd python-project-140
 pip install -e .
 ```
@@ -32,8 +32,18 @@ pip install -e .
 Ejecuta cualquiera de los juegos:
 
 ```bash
-brain-even      # ¿Par o impar?
-brain-calc      # Calculadora
-brain-gcd       # MCD
+brain-even        # ¿Par o impar?
+brain-calculate   # Calculadora
+brain-gcd         # MCD
 brain-progression # Progresión aritmética
-brain-prime     # ¿Es primo?
+brain-prime       # ¿Es primo?
+```
+
+## Demostración
+
+[![asciicast](https://asciinema.org/a/TU_ID_AQUI.svg)](https://asciinema.org/a/TU_ID_AQUI)
+
+En esta grabación puedes ver:
+- Instalación del paquete
+- Ganar un juego (3 respuestas correctas)
+- Perder un juego (respuesta incorrecta)
