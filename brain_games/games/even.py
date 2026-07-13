@@ -6,7 +6,7 @@ def play_brain_even():
     # Ejecutamos la funcion y nos devuelve la variable name
     name = welcome_user()
 
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     # Agregando contador
     contador = 0
