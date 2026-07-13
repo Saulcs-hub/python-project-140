@@ -38,11 +38,6 @@ brain-gcd         # MCD
 brain-progression # Progresión aritmética
 brain-prime       # ¿Es primo?
 ```
-
-## Demostración
-
-[![asciicast](https://asciinema.org/a/TU_ID_AQUI.svg)](https://asciinema.org/a/TU_ID_AQUI)
-
 En esta grabación puedes ver:
 - Instalación del paquete
 - Ganar un juego (3 respuestas correctas)
