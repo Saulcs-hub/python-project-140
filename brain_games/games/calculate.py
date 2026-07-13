@@ -6,7 +6,7 @@ from brain_games.cli import welcome_user
 ROUNDS_TO_WIN = 3
 MAX_NUMBER = 50
 
-def gerate_questions():
+def generate_questions():
     numero_1 = random.randint(1, MAX_NUMBER)
     numero_2 = random.randint(1, MAX_NUMBER)
 
@@ -31,7 +31,7 @@ def play_brain_calculate():
     contador = 0
     while contador < ROUNDS_TO_WIN:
         
-        numero_1, numero_2, operation = gerate_questions()
+        numero_1, numero_2, operation = generate_questions()
         print(f"Question: {numero_1} {operation} {numero_2}")
 
         result = int(input("Your answer: "))

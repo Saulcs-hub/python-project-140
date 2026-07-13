@@ -30,7 +30,7 @@ def play_brain_gcd():
             contador += 1
             print("Correct!")
         else:
-            print(f"{result} is wrong answer ;(. Correct answer was '{answer}'.")
+            print(f"'{result}' is wrong answer ;(. Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             return
 

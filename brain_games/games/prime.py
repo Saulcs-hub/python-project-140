@@ -37,7 +37,7 @@ def play_brain_prime():
     name = welcome_user()
     contador = 0
 
-    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     while contador < ROUNDS_TO_WIN:
         number = random.randint(2, MAX_NUMBER)
