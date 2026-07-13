@@ -1,7 +1,7 @@
 # Brain Games
 
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=YOUR_PROJECT_KEY&metric=sqale_rating)](https://sonarcloud.io/summary/overall_health/project/YOUR_PROJECT_KEY)
-[![Actions](https://github.com/TU_USER/python-project-140/workflows/hexlet-check/badge.svg)](https://github.com/TU_USER/python-project-140/actions)
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/Saulcs-hub/python-project-140/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Saulcs-hub/python-project-140/actions)
 
 ## Descripción
 
