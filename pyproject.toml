@@ -1,7 +1,10 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "A collection of educational math games"
+authors = [
+    { name = "Carlos Saul Villabona", email = "cvillabona353@unab.edu.co" }
+]
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
